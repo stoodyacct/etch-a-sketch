@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch-a-Sketch!</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id='container'>
+            <div id=menu>
+                <p>Etch-a-Sketch</p>
+                <p>Created by Stanley Yoo</p>
+            </div>
+            <img src="etchasketch.jpg" alt="Cartoon drawing of Etch-a-Sketch" id="etchasketch">
+            <div id='outerDiv'></div>
+            <form id='form'>
+                <label for='dimensions' id="dimensionsLabel">Change grid dimensions: </label>
+                <input type='number' id='dimensions' name='dimensions' placeholder="Enter a number greater than 1">
+                <br>
+                <input type="submit" id='submitBtn'>
+            </form>
+            <button id="clearBtn" onClick=clearGrid()>Clear Grid</button>
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>
