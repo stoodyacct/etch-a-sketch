@@ -1,89 +1,138 @@
-#menu {
-    text-align: left;
-    height: 35vh;
-    width: 96vw;
+#container {
+    background-color: #f0ead6;
+    height: 98vh;
+    width: 98vw;
+    border: 1px solid rgb(233, 227, 227);
     border-radius: 10px;
-    margin: 14vw 1vw 0 1vw;
+}
+
+#background {
+    height: 22vh;
+    width: 62vw;
+    border-radius: 20px;
+    margin: 20vw 0 0 15vw;
     background-color: rgb(207, 136, 136);
-}
-
-p:first-of-type {
-    position: absolute;
-    font-family: 'Lobster', cursive;
-    font-size: 10vh;
-    color: rgb(250, 242, 242);
-    margin: 7vh 0 0 16vh;
-}
-
-p:nth-of-type(2) {
-    position: absolute;
-    font-size: 3.5vh;
-    font-family: 'Mulish', sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 1000;
-    margin: 19vh 0 0 22vh;
-}
-
-#outerDiv {
-    position: absolute;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(16, auto);
-    height: 32.5vh;
-    width: 35.5vw;
-    margin: -35.5vh 0 0 49.2vw;
-    transform: skewY(3deg);
-}
-
-.innerDiv {
-    background-color: rgba(245, 245, 245, 0.952);
-    border-radius: 4px;
+    box-shadow: 15px 15px 20px rgb(63, 62, 62);
 }
 
 #etchasketch {
-    position: absolute;
-    z-index: 0;
-    height: 52vh;
-    width: 50vw;
-    border: solid rgba(53, 51, 51, 0.3);
-    border-radius: 10px;
-    border-width: 5px 8px 8px 5px;
-    box-shadow: 16px 10px 10px rgb(63, 62, 62);
+    height: 90vh;
+    width: 40vw;
+    margin-top: -48vh;
+    margin-left: 40vw;
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+    width: 25vw;
+    height: 20vh;
+    margin-left: 3.5vw;
+}
+
+#colours {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 5.8vh;
+    width: 20vw;
+    background-color: rgb(243, 239, 239);
+    opacity: .4;
+    border-radius: 40px;
+    margin-top: -1vh;
+    margin-left: 5.25vh;
+    border: solid rgba(126, 100, 100, 0.6);
+}
+
+.dot {
+    height: 4.2vh;
+    width: 2.1vw;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(63, 62, 62);
+    margin-top: .7vh;
+    margin-left: 1.5vw;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#rainbow {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+}
+
+p:first-of-type {
+    font-family: 'Lobster', cursive;
+    font-size: 6.5vh;
+    color: white;
+}
+
+p:nth-of-type(2) {
+    font-size: 2.5vh;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    margin-top: -6.5vh;
+}
+
+#outerDiv {
+    display: grid;
+    grid-template-columns: repeat(30, auto);
+    height: 26.5vh;
+    width: 16.3vw;
+    transform: skewY(2.8deg);
+    margin: -38.25vh 0 0 9.15vw;
+}
+
+#image {
+    height: 44vh;
+    width: 24vw;
+    border: solid rgba(189, 145, 145, 0.8);
+    border-radius: 25px 70px 40px 70px;
+    border-width: 0 18px 16px 0;
+    box-shadow: 30px 25px 35px rgb(63, 62, 62);
     transform: skewY(3deg);
-    margin: -45vh 0 0 42vw;
+    margin-right: 4vw;
+    margin-top: 10vh;
 }
 
 #form {
-    text-align: center;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: 'Lobster', cursive;
-    color: rgb(56, 53, 53);
-    transform: skewY(2.5deg);
-    margin: -1.5vh 0 0 37vw;
+    color: rgb(43, 41, 41);
+    transform: skewY(2.3deg);
+    width: 35vw;
+    margin-right: 4vw;
+    margin-top: 2vh;
+    margin-bottom: -2.35vh;
 }
 
 #dimensions {
-    width: 11vw;
-}
-
-#submitBtn {
-    margin-right: 14vw;
-    width: 12vw;
-    transform: skewY(.5deg);
-}
-
-#clearBtn {
-    position: absolute;
-    z-index: 1;
-    margin: -2.2vh 0 0 69vw;
-    transform: skewY(3deg);
-    width: 12vw;
+    width: 5.5vw;
 }
 
 #submitBtn, #clearBtn {
-    color: rgb(34, 33, 33);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    border-color: white;
-    font-size: 2vh;
+    width: 7.5vw;
+    background-color: rgb(223, 213, 213);
+    font-family: 'Lobster', cursive;
+    border-radius: 8px;
+    font-size: 1.5vh;
+    outline: none;
+}
+
+#submitBtn {
+    margin-right: 8vw;
+    margin-top: 0.8vh;
+}
+
+#clearBtn {
+    transform: skewY(2.3deg);
+    margin-left: 2.7vw;
 }

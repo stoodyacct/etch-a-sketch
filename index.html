@@ -8,19 +8,29 @@
     </head>
     <body>
         <div id='container'>
-            <div id=menu>
-                <p>Etch-a-Sketch</p>
-                <p>Created by Stanley Yoo</p>
+            <div id="background">
+                <div id="menu">
+                    <p>Etch-a-Sketch!</p>
+                    <p>Created by Stanley Yoo</p>
+                    <div id="colours">
+                        <div class="dot" id="blue" onClick="changeColours('blue')"></div>
+                        <div class="dot" id="red" onClick="changeColours('red')"></div>
+                        <div class="dot" id="green" onClick="changeColours('green')"></div>
+                        <div class="dot" id="rainbow" onClick="changeColours('rainbow')"></div>
+                    </div>
+                </div>
             </div>
-            <img src="etchasketch.jpg" alt="Cartoon drawing of Etch-a-Sketch" id="etchasketch">
-            <div id='outerDiv'></div>
-            <form id='form'>
-                <label for='dimensions' id="dimensionsLabel">Change grid dimensions: </label>
-                <input type='number' id='dimensions' name='dimensions' placeholder="Enter a number greater than 1">
-                <br>
-                <input type="submit" id='submitBtn'>
-            </form>
-            <button id="clearBtn" onClick=clearGrid()>Clear Grid</button>
+            <div id="etchasketch">
+                <img src="etchasketch.jpg" alt="Cartoon drawing of Etch-a-Sketch" id="image">
+                <div id='outerDiv'></div>
+                <form id='form'>
+                    <label for='dimensions' id="dimensionsLabel">Change grid dimensions: </label>
+                    <input type='number' id='dimensions' name='dimensions' placeholder="Enter a number">
+                    <br>
+                    <input type="submit" id='submitBtn'>
+                </form>
+                <button id="clearBtn" onClick=clearGrid()>Clear Grid</button>
+            </div>
         </div>
         <script src='script.js'></script>
     </body>
